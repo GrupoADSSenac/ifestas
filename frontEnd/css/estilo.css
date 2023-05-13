@@ -14,3 +14,12 @@ img{
     height: 80px;
     width: 70px;
 }
+
+.form-control:focus {
+    border-color: red;
+    outline: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  
+  

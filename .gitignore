@@ -33,4 +33,4 @@ build/
 .vscode/
 
 ## DS STORE -> Pasta criada pelo MAC
-.DS_Store/
+.DS_Store

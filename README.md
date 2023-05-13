@@ -31,7 +31,10 @@ o comando [grant all] irá conceder acesso ao usuário [root] a todas as operaç
 
 ## Subindo a aplicação
 
+
 No prompt de comando, vá até a pasta ichurras. Nela, execute o comando maven abaixo:
+
 ./mvnw spring-boot:run
+
 isto irá executar a aplicação que subirá na porta 8080 do localhost.
 

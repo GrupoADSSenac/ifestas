@@ -15,6 +15,9 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @Column(name="cpf", length = 11, nullable = false, unique = true)
+    private String cpf;
+
     @Column(name="email", length = 100, nullable = false, unique = true)
     private String email;
 
@@ -26,6 +29,7 @@ public class Usuario {
 
     @Column(name="telefone", length = 13, nullable = false)
     private String telefone;
+
 
     
     
@@ -50,6 +54,14 @@ public class Usuario {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getCpf() {
+        return this.cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     public String getEmail() {

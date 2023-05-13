@@ -48,7 +48,7 @@ function tratarResposta (res){
 function fazerLogin(user){
     //armazena no locastorage os dados do usuário que fez login
     localStorage.setItem("userLogged", JSON.stringify(user));
-    document.getElementById("msgErro").innerHTML = "Usuário Logado com sucesso";
+    window.location = "http://localhost:4200";
     console.log(user)
     
 }

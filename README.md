@@ -4,6 +4,7 @@
 * Java 11 ou superior
 * Maven
 * Banco de Dados MYSQL 8.0.32
+* NodeJs versão 16 ou superior
 
 ## Passos para subir a aplicação
 * Abrir prompt de comando e executar os comandos abaixo:
@@ -43,5 +44,9 @@ isto irá executar a aplicação que subirá na porta 8080 do localhost.
 ## Abrir aplicação front end no browser...
 
 
-Abrir a pasta frontEnd e, abrir o arqiuvo index.html com o browser de internet desejado.
+Executar os comandos no prompt.
+Navegue até a pasta /frontEnd/angular e execute os comandos abaixo:
+* npm install
+* npm start
 
+Abrir a pasta /frontEnd a pagina index.html no browser desejado.

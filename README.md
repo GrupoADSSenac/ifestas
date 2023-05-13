@@ -38,3 +38,10 @@ No prompt de comando, vá até a pasta ichurras. Nela, execute o comando maven a
 
 isto irá executar a aplicação que subirá na porta 8080 do localhost.
 
+
+
+## Abrir aplicação front end no browser...
+
+
+Abrir a pasta frontEnd e, abrir o arqiuvo index.html com o browser de internet desejado.
+

@@ -53,6 +53,11 @@ function fazerLogin(user){
     
 }
 
+function cadastrar(){
+    window.location = "http://www.google.com";
+}
+
+
 function logout(){
     localStorage.removeItem("userLogged");
     window.location = "index.html";

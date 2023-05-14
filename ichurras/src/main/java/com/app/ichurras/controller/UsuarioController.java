@@ -81,7 +81,7 @@ public class UsuarioController {
 
     // Procurar por todos os  usuarios
     @GetMapping("/todos")
-    public List<Usuario> buscarUsuarioPorId() {
+    public List<Usuario> buscarTodos() {
         List<Usuario> ListaDeUsuarios = (List<Usuario>)usuarioDao.findAll();
         return ListaDeUsuarios;      
     }

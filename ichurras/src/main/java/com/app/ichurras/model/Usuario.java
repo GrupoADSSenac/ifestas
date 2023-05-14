@@ -1,11 +1,16 @@
 package com.app.ichurras.model;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name="usuario")
@@ -30,23 +35,17 @@ public class Usuario {
     @Column(name="telefone", length = 13, nullable = false)
     private String telefone;
 
+    @OneToMany(mappedBy = "usuario")
+    @JsonIgnoreProperties("usuario")
+    private List<Evento> eventos;
+    
 
     
     
-
-    public Usuario(int id, String email, String nome, String senha, String telefone) {
-        this.id = id;
-        this.email = email;
-        this.nome = nome;
-        this.senha = senha;
-        this.telefone = telefone;
-    }
      
     public Usuario() {
     }
         
-
-
 
     public int getId() {
         return this.id;
@@ -94,6 +93,14 @@ public class Usuario {
 
     public void setTelefone(String telefone) {
         this.telefone = telefone;
+    }
+
+    public List<Evento> getEventos() {
+        return eventos;
+    }
+
+    public void setEventos(List<Evento> eventos) {
+        this.eventos = eventos;
     }
 
 

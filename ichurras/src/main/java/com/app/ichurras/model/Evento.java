@@ -2,18 +2,20 @@ package com.app.ichurras.model;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-
-import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
 @Entity
@@ -36,30 +38,27 @@ public class Evento {
     private LocalTime horaEvento;
 
     
-    @Column(name = "endereco", length = 255)
+    @Column(name = "endereco")
     private String endereco;
 
 
     @Column(name = "valor_total_evento")
     private long valorTotalEvento;
 
+    @OneToMany(mappedBy = "evento")
+    @JsonIgnoreProperties("evento")
+    private List<Convidados> convidados;
 
-    @OneToMany
-    private List<Usuario> usuario;
+    @ManyToOne
+    @JoinColumn(name = "usuario_id")
+    @JsonIgnoreProperties("eventos")
+    private Usuario usuario;
 
 
     public Evento() {
     }
 
-    public Evento(int id, String nome, LocalDate dataEvento, LocalTime horaEvento, String endereco, long valorTotalEvento, List<Usuario> usuario) {
-        this.id = id;
-        this.nome = nome;
-        this.dataEvento = dataEvento;
-        this.horaEvento = horaEvento;
-        this.endereco = endereco;
-        this.valorTotalEvento = valorTotalEvento;
-        this.usuario = usuario;
-    }
+    
 
     public int getId() {
         return this.id;
@@ -109,13 +108,22 @@ public class Evento {
         this.valorTotalEvento = valorTotalEvento;
     }
 
-    public List<Usuario> getUsuario() {
+    public List<Convidados> getConvidados() {
+        return this.convidados;
+    }
+
+    public void setConvidados(List<Convidados> convidados) {
+        this.convidados = convidados;
+    }
+
+    public Usuario getUsuario() {
         return this.usuario;
     }
 
-    public void setUsuario(List<Usuario> usuario) {
+    public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
     }
     
+
 
 }

@@ -14,18 +14,18 @@
 
 ### No prompt de comandos do mysql, execute como segue abaixo: 
 
-* mysql> create database db_ichurras;
+* mysql> create database db_ichurrasapp;
 
 * mysql> create user 'ichurrasapp'@'%' identified by 'ichurrasapp';
 
-* *mysql> grant all on db_ichurras.* to  'ichurrasapp'@'%';
+* *mysql> grant all on db_ichurrasapp.* to  'ichurrasapp'@'%';
 
 
-O comando [create database] criará o banco de dados da aplicação chamado db_ichurras.
+O comando [create database] criará o banco de dados da aplicação chamado db_ichurrasapp.
 
 O comando [create user] irá criar o usuário ichurras utilizado na aplicação back-end.
 
-o comando [grant all] irá conceder acesso ao usuário [root] a todas as operações no banco de dados db_ichurras.
+o comando [grant all] irá conceder acesso ao usuário [root] a todas as operações no banco de dados db_ichurrasapp.
 
 
 

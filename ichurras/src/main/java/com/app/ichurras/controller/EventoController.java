@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -34,7 +35,7 @@ public class EventoController {
 
     
     // ENDPOINT Atualizar => Chamar passando  Todos os campos inclusive o ID
-    @PostMapping("/atualizar")
+    @PutMapping("/atualizar")
     public ResponseEntity<Evento> alterarEvento(@RequestBody Evento eventoRecebido) {
         Evento eventoEncontrado = eventoDao.findById(eventoRecebido.getId());
         if (eventoEncontrado != null) {

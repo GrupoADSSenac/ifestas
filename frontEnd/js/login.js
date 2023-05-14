@@ -53,8 +53,9 @@ function fazerLogin(user){
     
 }
 
-function cadastrar(){
-    window.location = "http://www.google.com";
+function cadastrar(event){
+    console.log("passou cadastrar");
+    window.location = "http://localhost:4200";
 }
 
 

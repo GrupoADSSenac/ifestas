@@ -24,14 +24,18 @@
           <thead>
             <tr>
               <th>Nome</th>
+              <th>Documento</th>
               <th>Telefone</th>
+              <th>Valor Devido</th>
               <th>Pago</th>
             </tr>
           </thead>
           <tbody>
             <tr *ngFor='let convidado of filteredConvidados'>
               <td>{{ convidado.nome }}</td>
+              <td>{{ convidado.documento }}</td>
               <td>{{ convidado.telefone }}</td>
+              <td>{{ convidado.valorDevido}}</td>
               <td>{{ convidado.pago }}</td>
             </tr>
           </tbody>

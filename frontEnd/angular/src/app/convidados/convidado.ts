@@ -5,4 +5,5 @@ export interface IConvidado {
   telefone: string;
   valorDevido: number;
   pago: boolean;
+  eventoId: number;
 }

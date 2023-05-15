@@ -7,5 +7,6 @@ export interface IEvento {
   dataEvento: string;
   horarioEvento: string;
   valorTotalEvento: number;
-  convidados: Array<IConvidado>;
+  convidados: IConvidado[] | undefined;
+  usuarioId: number
 }

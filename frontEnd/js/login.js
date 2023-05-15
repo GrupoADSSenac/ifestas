@@ -54,8 +54,8 @@ function fazerLogin(user){
 }
 
 function cadastrar(event){
+    window.location = "http://localhost:4200/editar-usuario";
     console.log("passou cadastrar");
-    window.location = "http://localhost:4200";
 }
 
 

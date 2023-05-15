@@ -6,7 +6,8 @@
 * Banco de Dados MYSQL 8.0.32
 * NodeJs versão 16 ou superior
 
-## Passos para subir o banco de dados
+## Passos para preparar o banco de dados
+* Dar o start no banco de dados mysql.
 * Abrir prompt de comando e executar os comandos abaixo:
 * mysql -u root -p
 * Entrar com a senha do usuário ROOT da máquina

@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.app.ichurras.dao.UsuarioDAO;
+import com.app.ichurras.model.Evento;
 import com.app.ichurras.model.Usuario;
 
 import java.util.List;
@@ -98,5 +99,14 @@ public class UsuarioController {
             return ResponseEntity.status(403).build();
         }
     }
+
+
+    // ENDPOINT BUSCAR EVENTOS DE UM USUARIO => Chamar passando o Id do usuario pelo URL
+    @GetMapping("/{id}/eventos")
+    public List<Evento> buscarEventosPorUsuario(@PathVariable int id) {
+        List<Evento> ListaEventosUsuario = (List<Evento>)usuarioDao.findAllById(id);
+        return ListaEventosUsuario;      
+    }
+
 
 }

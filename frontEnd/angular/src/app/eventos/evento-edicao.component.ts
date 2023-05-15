@@ -56,9 +56,10 @@ export class EventoEdicaoComponent implements OnInit {
       next: evento => this.evento = evento,
       error: err => this.errorMessage = err
     });
+    this.router.navigate(['/eventos']);
   }
 
   onBack(): void {
-    this.router.navigate(['/home']);
+    this.router.navigate(['/eventos']);
   }
 }

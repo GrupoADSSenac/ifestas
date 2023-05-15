@@ -31,6 +31,6 @@ export class EventoDetalheComponent implements OnInit {
   }
 
   onBack(): void {
-    this.router.navigate(['/eventos']);
+    this.router.navigate(['/everntos']);
   }
 }

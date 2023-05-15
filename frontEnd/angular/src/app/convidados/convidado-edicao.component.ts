@@ -44,9 +44,11 @@ export class ConvidadoEdicaoComponent implements OnInit {
     var data = {
       "id": this.checkoutForm.get("id")?.value,
       "nome": this.checkoutForm.get("nome")?.value,
+      "documento": this.checkoutForm.get("documento")?.value,
       "telefone": this.checkoutForm.get("telefone")?.value,
+      "valorDevido": this.checkoutForm.get("valorDevido")?.value,
       "pago": this.checkoutForm.get("pago")?.value,
-      "ConvidadoId": 1
+      "eventoId": 1
     }
     this.service.editarConvidado(data).subscribe({
       next: convidado => this.convidado = convidado,

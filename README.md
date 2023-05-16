@@ -49,4 +49,6 @@ Navegue até a pasta /frontEnd/angular e execute os comandos abaixo:
 * npm install
 * npm start
 
-Fora do prompt de comando, abra a pasta /frontEnd e a pagina index.html no browser desejado.
+Abra o browser desejado e entre com o endereço abaixo:
+
+http://localhost:4200/

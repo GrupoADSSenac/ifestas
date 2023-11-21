@@ -7,7 +7,7 @@ body, html{
 }
 
 #msgErro{
-    color: red;
+    color: rgb(51, 14, 14);
 }
 
 img{
@@ -16,7 +16,7 @@ img{
 }
 
 .form-control:focus {
-    border-color: red;
+    border-color: rgb(39, 10, 10);
     outline: 0;
     -webkit-box-shadow: none;
             box-shadow: none;

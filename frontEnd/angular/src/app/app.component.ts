@@ -6,7 +6,7 @@ import { Component } from "@angular/core";
     <div class='header'>
       <div class='logo'>
         <a routerLinkActive='active' routerLink='/home'>
-          <img src='./assets/images/logo.png' alt='Logotipo iChurras' style='max-height:8em;' />
+          <img src='./assets/images/logo.jpeg' alt='Logotipo iFestas' style='max-height:8em;' />
         </a>
       </div>
       <div class='title'>
@@ -40,7 +40,7 @@ import { Component } from "@angular/core";
     `
 })
 export class AppComponent {
-  pageTitle = 'Sistema iChurras';
+  pageTitle = 'Sistema iFestas';
   userName = "Fernando"
   userId = 1
 }

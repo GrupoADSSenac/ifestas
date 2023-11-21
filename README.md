@@ -1,4 +1,4 @@
-# Aplicação Ichurras
+# Aplicação Ifestas
 
 ## Necessário instalação: 
 * Java 11 ou superior
@@ -15,25 +15,25 @@
 
 ### No prompt de comandos do mysql, execute como segue abaixo: 
 
-* mysql> create database db_ichurrasapp;
+* mysql> create database db_ifestasapp;
 
-* mysql> create user 'ichurrasapp'@'%' identified by 'ichurrasapp';
+* mysql> create user 'ifestasapp'@'%' identified by 'ifestasapp';
 
-* *mysql> grant all on db_ichurrasapp.* to  'ichurrasapp'@'%';
+* *mysql> grant all on db_ifestasapp.* to  'ifestasapp'@'%';
 
 
-O comando [create database] criará o banco de dados da aplicação chamado db_ichurrasapp.
+O comando [create database] criará o banco de dados da aplicação chamado db_ifestasapp.
 
-O comando [create user] irá criar o usuário ichurras utilizado na aplicação back-end.
+O comando [create user] irá criar o usuário ifestas utilizado na aplicação back-end.
 
-o comando [grant all] irá conceder acesso ao usuário [root] a todas as operações no banco de dados db_ichurrasapp.
+o comando [grant all] irá conceder acesso ao usuário [root] a todas as operações no banco de dados db_ifestasapp.
 
 
 
 ## Subindo a aplicação back-end
 
 
-No prompt de comando, vá até a pasta ichurras. Nela, execute o comando maven abaixo:
+No prompt de comando, vá até a pasta ifestas. Nela, execute o comando maven abaixo:
 
 ./mvnw spring-boot:run
 
